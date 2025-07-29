@@ -1,0 +1,551 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #ffffff;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Content Frame - Mobile First */
+.content-frame {
+  width: 100%;
+  max-width: 100vw;
+  min-height: 100vh;
+  position: relative;
+  background: #ffffff;
+}
+
+/* Header Section - Mobile First */
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+}
+
+.restaurant-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 18px;
+  color: #1E1E1E;
+  line-height: 1.2;
+}
+
+.table-id {
+  font-size: 10px;
+  color: #F25404;
+  line-height: 1.2;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.bell-icon {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bell-icon i {
+  font-size: 20px;
+  color: #F25404;
+}
+
+.notification-dot {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  width: 8px;
+  height: 8px;
+  background: #F25404;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+}
+
+.menu-icon {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 20px;
+}
+
+.menu-icon .line {
+  width: 100%;
+  height: 2px;
+  background: #1E1E1E;
+  border-radius: 1px;
+}
+
+/* Dish Image Container - Mobile First */
+.dish-container {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  margin: 20px 0;
+  padding: 0 20px;
+}
+
+.dish-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+}
+
+.icon-button {
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  background: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 16px;
+  z-index: 2;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.back-arrow {
+  left: 32px;
+}
+
+.heart-icon {
+  right: 32px;
+}
+
+/* Content Section - Mobile First */
+.content-section {
+  width: 100%;
+  background: #FAFAFA;
+  border-radius: 22px 22px 0 0;
+  padding: 20px;
+  margin-top: -10px;
+  position: relative;
+  z-index: 1;
+  min-height: calc(100vh - 300px);
+}
+
+/* Vegetarian Label */
+.veg-label {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 20px;
+}
+
+.veg-icon-wrapper {
+  width: 14px;
+  height: 14px;
+  position: relative;
+}
+
+.veg-square {
+  width: 14px;
+  height: 14px;
+  border: 1.27px solid #06CF24;
+  border-radius: 2.55px;
+  position: relative;
+}
+
+.veg-circle {
+  width: 8.91px;
+  height: 8.91px;
+  background: #06CF24;
+  border-radius: 50%;
+  position: absolute;
+  top: 2.55px;
+  left: 2.55px;
+}
+
+.veg-text {
+  font-weight: 500;
+  font-size: 12px;
+  color: #323232;
+}
+
+/* Dish Info Section */
+.dish-info {
+  margin-bottom: 20px;
+}
+
+.dish-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.dish-name-section {
+  flex: 1;
+}
+
+.dish-name {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #000000;
+  margin-bottom: 4px;
+}
+
+.dish-description {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #949494;
+}
+
+.rating-section {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 4px;
+}
+
+.star-icon {
+  width: 10px;
+  height: 10px;
+  background-color: #06CF24;
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+}
+
+.rating-text {
+  font-weight: 500;
+  font-size: 11px;
+  color: #BEBEBE;
+}
+
+/* Full Description */
+.dish-full-description {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #949494;
+  margin-bottom: 30px;
+}
+
+/* Portion Selection */
+.portion-selection {
+  margin-bottom: 30px;
+}
+
+.portion-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.portion-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+}
+
+.portion-left input[type="radio"] {
+  opacity: 0;
+  position: absolute;
+}
+
+.custom-radio {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #FF6F00;
+  border-radius: 50%;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.custom-radio::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-color: #FF6F00;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.portion-left input[type="radio"]:checked + .custom-radio::after {
+  opacity: 1;
+}
+
+.portion-label {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #323232;
+}
+
+.portion-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.add-button {
+  width: 60px;
+  height: 28px;
+  background: #EBEBEB;
+  border: 1px solid #FDFDFD;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #323232;
+  box-shadow: 0px 2px 8px rgba(255, 111, 0, 0.2);
+  cursor: pointer;
+}
+
+.plus-icon {
+  color: #FF6F00;
+  font-size: 16px;
+}
+
+.price {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #FF6F00;
+  min-width: 50px;
+}
+
+/* Order Status */
+.order-status {
+  background: #FFFFFF;
+  border-radius: 14px;
+  box-shadow: 0px 4px 7.2px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+}
+
+.status-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+}
+
+.status-icon {
+  font-size: 20px;
+  color: #FF5722;
+  flex-shrink: 0;
+}
+
+.status-text {
+  flex: 1;
+}
+
+.status-title {
+  font-size: 12px;
+  color: #000000;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.status-subtitle {
+  font-size: 11px;
+  color: #666666;
+  line-height: 1.3;
+  margin-top: 2px;
+}
+
+.arrow-icon {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.arrow-line {
+  position: absolute;
+  top: 50%;
+  right: 6px;
+  width: 12px;
+  height: 0;
+  border-top: 2px solid #F25404;
+  transform: translateY(-50%);
+}
+
+.arrow-head {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 6px;
+  height: 6px;
+  border-top: 2px solid #F25404;
+  border-right: 2px solid #F25404;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+/* Tablet Styles */
+@media (min-width: 768px) {
+  .content-frame {
+    max-width: 500px;
+    margin: 0 auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .header-section {
+    padding: 20px 30px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .table-id {
+    font-size: 11px;
+  }
+
+  .dish-container {
+    height: 300px;
+    padding: 0 30px;
+    margin: 30px 0;
+  }
+
+  .content-section {
+    padding: 30px;
+  }
+
+  .dish-name {
+    font-size: 22px;
+  }
+
+  .dish-description {
+    font-size: 16px;
+  }
+
+  .dish-full-description {
+    font-size: 16px;
+  }
+
+  .portion-label {
+    font-size: 18px;
+  }
+
+  .price {
+    font-size: 18px;
+  }
+
+  .status-title {
+    font-size: 14px;
+  }
+
+  .status-subtitle {
+    font-size: 12px;
+  }
+}
+
+/* Desktop Styles */
+@media (min-width: 1024px) {
+  .content-frame {
+    max-width: 600px;
+  }
+
+  .header-section {
+    padding: 25px 40px;
+  }
+
+  .dish-container {
+    height: 350px;
+    padding: 0 40px;
+    margin: 40px 0;
+  }
+
+  .content-section {
+    padding: 40px;
+  }
+
+  .dish-details {
+    gap: 30px;
+  }
+
+  .portion-right {
+    gap: 20px;
+  }
+
+  .add-button {
+    width: 65px;
+    height: 30px;
+  }
+}
+
+/* Large Desktop Styles */
+@media (min-width: 1200px) {
+  .content-frame {
+    max-width: 700px;
+  }
+
+  .dish-container {
+    height: 400px;
+  }
+}
+
+/* Accessibility and Interaction */
+.add-button:hover {
+  background: #e0e0e0;
+  transform: translateY(-1px);
+  transition: all 0.2s ease;
+}
+
+.portion-left:hover .custom-radio {
+  transform: scale(1.05);
+  transition: transform 0.2s ease;
+}
+
+.order-status:hover {
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.2s ease;
+}
+
+/* Focus states for accessibility */
+.portion-left input[type="radio"]:focus + .custom-radio {
+  outline: 2px solid #FF6F00;
+  outline-offset: 2px;
+}
+
+.add-button:focus {
+  outline: 2px solid #FF6F00;
+  outline-offset: 2px;
+}
