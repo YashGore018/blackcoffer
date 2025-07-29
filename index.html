@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Veg Biryani Details</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="mobile-container">
+    <!-- Header -->
+    <div class="header">
+      <div class="header-left">
+        <div class="restaurant-info">
+          <h1 class="restaurant-name">The Spice Villa!</h1>
+          <p class="table-id">Table ID : #34</p>
+        </div>
+      </div>
+      <div class="header-right">
+        <div class="notification-bell">
+          <div class="bell-icon">🔔</div>
+          <div class="notification-dot"></div>
+        </div>
+        <div class="menu-icon">
+          <div class="menu-line"></div>
+          <div class="menu-line"></div>
+          <div class="menu-line"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dish Image Section -->
+    <div class="dish-image-container">
+      <img src="8190a4f56acb0a34465c34285c32dbf3d99f1c65 copy.png" alt="Veg Biryani" class="dish-image">
+      
+      <!-- Back Arrow -->
+      <div class="icon-button back-button">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path d="M15 6L9 12L15 18" stroke="#323232" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+
+      <!-- Heart Icon -->
+      <div class="icon-button heart-button">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+          <path d="M12.1 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 
+                   2 6.5 3.5 5 5.5 5 
+                   c1.54 0 3.04 1.04 3.57 2.36 
+                   h1.87C13.46 6.04 14.96 5 16.5 5 
+                   c2 0 3.5 1.5 3.5 3.5 
+                   c0 3.78-3.4 6.86-8.65 11.54L12.1 21.35z"
+                fill="#FF6F00"/>
+        </svg>
+      </div>
+    </div>
+
+    <!-- Dish Details Card -->
+    <div class="dish-details-card">
+      <!-- Vegetarian Label -->
+      <div class="veg-label">
+        <div class="veg-icon">
+          <div class="veg-square">
+            <div class="veg-dot"></div>
+          </div>
+        </div>
+        <span class="veg-text">Vegetarian</span>
+      </div>
+
+      <!-- Dish Info -->
+      <div class="dish-info">
+        <div class="dish-title-section">
+          <div class="dish-name-desc">
+            <h2 class="dish-name">Veg Biryani</h2>
+            <p class="dish-type">Aromatic, Rice</p>
+          </div>
+          <div class="rating-section">
+            <div class="star-rating">
+              <div class="star-icon">★</div>
+              <span class="rating-text">4.3 (243) ordered</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Full Description -->
+      <div class="dish-description">
+        Aromatic basmati rice slow-cooked with fresh vegetables, hand-picked spices, and saffron. Served hot with cooling raita on the side — a timeless Indian classic full of flavor and warmth.
+      </div>
+
+      <!-- Portion Selection -->
+      <div class="portion-selection">
+        <!-- Half Portion -->
+        <div class="portion-option">
+          <label class="portion-label">
+            <input type="radio" name="portion" value="half" checked />
+            <span class="radio-custom"></span>
+            <span class="portion-text">Half</span>
+          </label>
+          <div class="portion-controls">
+            <div class="quantity-control">
+              <span class="quantity">01</span>
+              <span class="plus-icon">+</span>
+            </div>
+            <div class="price">₹180</div>
+          </div>
+        </div>
+
+        <!-- Full Portion -->
+        <div class="portion-option">
+          <label class="portion-label">
+            <input type="radio" name="portion" value="full" />
+            <span class="radio-custom"></span>
+            <span class="portion-text">Full</span>
+          </label>
+          <div class="portion-controls">
+            <div class="quantity-control">
+              <span class="quantity">Add</span>
+              <span class="plus-icon">+</span>
+            </div>
+            <div class="price">₹240</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Order Status -->
+      <div class="order-status">
+        <div class="status-content">
+          <div class="status-icon">🔥</div>
+          <div class="status-text">
+            <div class="status-title">Yum! Your order is heating up.</div>
+            <div class="status-subtitle">Go to cart to finish.</div>
+          </div>
+          <div class="arrow-icon">→</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <div class="bottom-nav">
+      <div class="nav-item active">
+        <div class="nav-icon">🏠</div>
+        <span class="nav-text">Menu</span>
+      </div>
+      <div class="nav-item">
+        <div class="nav-icon">📋</div>
+        <span class="nav-text">My Orders</span>
+      </div>
+      <div class="nav-item">
+        <div class="nav-icon">🛒</div>
+        <span class="nav-text">Your Order</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
