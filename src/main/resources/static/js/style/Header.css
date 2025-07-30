@@ -1,0 +1,109 @@
+.frame-16 {
+  position: absolute;
+  width: 4px;
+  height: 36.61px;
+  left: 500px;
+  transform: translateX(-50%);
+  top: 48px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 221px;
+  padding: 0;
+}
+
+/* Group 1 and Frame 29 */
+.group-1,
+.frame-29 {
+  width: 183px;
+  height: 36.61px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  padding-right: 30px;
+}
+
+/* Title and Table ID */
+.title {
+  width: 178.92px;
+  height: 23.36px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #1E1E1E;
+}
+
+.table-id {
+  width: 97.15px;
+  height: 11.25px;
+  font-size: 11px;
+  color: #F25404;
+}
+
+/* Frame 26 */
+.frame-26 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  width: 69px;
+  height: 29px;
+}
+
+.bxs-bell {
+  width: 29px;
+  height: 29px;
+}
+
+.vector {
+  position: absolute;
+  left: 12.5%;
+  right: 12.5%;
+  top: 8.33%;
+  bottom: 8.33%;
+  background: #F25404;
+} 
+
+.ellipse-5 {
+  position: absolute;
+  left: 56.67%;
+  right: 13.33%;
+  top: 3.33%;
+  bottom: 66.67%;
+  background: #F25404;
+}
+
+.ellipse-5-stroke {
+  position: absolute;
+  left: 56.67%;
+  right: 13.33%;
+  top: 3.33%;
+  bottom: 66.67%;
+  background: #FFFFFF;
+}
+
+.notification-count {
+  position: absolute;
+  left: 67.52%;
+  right: 25.91%;
+  top: 14.22%;
+  bottom: 76.21%;
+  background: #FFFFFF;
+}
+
+/* Frame 15 */
+.frame-15 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  width: 23px;
+  height: 22px;
+}
+
+.frame-15 .line {
+  width: 25px;
+  height: 2px;
+  background: #1E1E1E;
+}
